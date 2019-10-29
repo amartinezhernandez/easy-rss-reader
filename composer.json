@@ -1,0 +1,40 @@
+{
+    "name": "amartinezhernandez/easy-rss-reader",
+    "description": "A easy to implement RSS reader",
+    "keywords": ["rss"],
+    "homepage": "https://github.com/amartinezhernandez/easy-rss-reader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alberto Martínez",
+            "homepage": "https://github.com/amartinezhernandez/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "doctrine/collections": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "EasyFeedReader\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit"
+    }
+}

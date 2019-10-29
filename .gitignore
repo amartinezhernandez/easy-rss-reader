@@ -1,0 +1,9 @@
+.idea/
+/public/
+/coverage/
+/vendor/
+/logs/*
+!/logs/README.md
+docker-compose.yml
+Makefile
+phpdocker
